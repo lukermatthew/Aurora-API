@@ -19,7 +19,6 @@ const videoSchema = new mongoose.Schema(
       type: String,
       required: [true, 'Video is required!']
     },
-
     creator: {
       type: String,
       required: [true, 'A Creator is required!']
