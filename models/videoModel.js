@@ -19,8 +19,13 @@ const videoSchema = new mongoose.Schema(
       type: String,
       required: [true, 'Video is required!']
     },
+    // creator: {
+    //   type: String,
+    //   required: [true, 'A Creator is required!']
+    // },
     creator: {
-      type: String,
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
       required: [true, 'A Creator is required!']
     },
     createdAt: {

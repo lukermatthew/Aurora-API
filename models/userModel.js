@@ -19,6 +19,9 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Please tell us your lastname!']
   },
+  avatar: {
+    type: String
+  },
   email: {
     type: String,
     required: [true, 'Please provide your email'],
@@ -48,7 +51,6 @@ const userSchema = new mongoose.Schema({
   contactNo: {
     type: String
   },
-  avatar: String,
   role: {
     type: String,
     enum: ['user', 'admin'],
